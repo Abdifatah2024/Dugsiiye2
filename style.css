@@ -510,6 +510,28 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+.social-media-list{
+    display: flex;
+    gap: 10px !important;
+    justify-content: center !important;
+    color: black;
+}
+.social-media-list li{
+    list-style: none;
+}
+.social-media-list li a{
+    color: black;
+    transition: color 0.3s;
+}
+
 
 @media (max-width: 768px){
     .Desktop-Menu{
@@ -520,7 +542,7 @@ button:hover {
     }
    
     .humbuger{
-        display: flex;
+        display: flex !important;;
         justify-content: center;
         align-items: center;
    height:50px ;
@@ -535,7 +557,7 @@ button:hover {
         
     }
       .Mobile-Menu{
-        display: none;
+        display: flex;
               justify-content: center;
              position: fixed;
               inset: 0 0 0 0;
@@ -608,5 +630,14 @@ background-color:#f7f7f7;
         width: 100%;
         padding: 10px;
     }
+    .Mobile-Menu[data-visible="false"] {
+        transform: translateX(100%) !important;
 
+    }
+    .humbuger i[data-visible="true"] {
+        display: block;
+    }
+    .humbuger i[data-visible="false"] {
+        display: none;
+    }
         }
