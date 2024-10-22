@@ -548,9 +548,9 @@ button:hover {
    height:50px ;
    width: 50px;
         position: absolute;
-        top: 30%;
-        right: 5%;
-        background-color: blue;
+        /* top: 30%; */
+        right: 2%;
+        background-color:white;
         color: white;
      border-radius: 30px;
      font-size: 2rem;
