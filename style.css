@@ -28,11 +28,13 @@ span{
     justify-content: space-between;
     align-items: center;
    margin-inline: auto;
-   
+   position: absolute
     text-align: center;
 }
 .Desktop-Menu{
     height: 100%;
+    position:sticky;
+ 
 }
 .Desktop-Menu ul{
     height: 100%;
@@ -56,6 +58,7 @@ span{
 header{
     background-color: #80858d;
     height: 72px;
+
 }
 button{
     background-color: red;
@@ -454,11 +457,12 @@ table, th, td {
  }
  .frame{
     background-image: url('contact-bg.jpg' );
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     justify-content: center;
     padding: 20px;
-    display: flex;
+    height: auto;
+    /* display: flex; */
  }
  .container6{
     display: flex;
@@ -481,7 +485,7 @@ table, th, td {
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: auto;
 }
 
 label {
@@ -512,7 +516,7 @@ button:hover {
 }
 .map-container {
     position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    padding-bottom: 5%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
